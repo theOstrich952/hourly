@@ -20,4 +20,5 @@ app/build/
 app/build.gradle
 app/libs/
 app/proguard-rules.pro
-app/main/res/
+app/src/main/res/
+app/src/main/AndroidManifest

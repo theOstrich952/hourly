@@ -1,4 +1,4 @@
-package projects.ostrich952.hourly.Model;
+package projects.ostrich952.hourly.Model.Database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

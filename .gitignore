@@ -8,3 +8,16 @@
 /build
 /captures
 .externalNativeBuild
+*.idea/
+build.gradle
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+app/iml
+app/build/
+app/build.gradle
+app/libs/
+app/proguard-rules.pro
+app/main/res/

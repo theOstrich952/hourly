@@ -6,7 +6,6 @@ public class Day {
     private Date start_time;
     private Date end_time;
     private boolean lunch, tea;
-    private double pay;
 
     public Day(Date start_time, Date end_time, boolean lunch, boolean tea){
         this.start_time = start_time;
@@ -47,7 +46,7 @@ public class Day {
         this.tea = tea;
     }
 
-    public double getPay() {
+    public double getHours() {
         return getStart_time().getTime() - getEnd_time().getTime();
     }
 }

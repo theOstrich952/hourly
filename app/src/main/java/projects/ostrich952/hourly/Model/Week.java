@@ -1,15 +1,16 @@
 package projects.ostrich952.hourly.Model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Week {
     private ArrayList<Day> days;
     private double hours_worked;
+    private double pay_per_hour;
     private double pay_subtotal;
 
-    public Week(ArrayList<Day> days){
+    public Week(ArrayList<Day> days, double pay_per_hour){
         this.days = days;
+        this.pay_per_hour = pay_per_hour;
     }
 
     public ArrayList<Day> getDays() {
@@ -21,6 +22,10 @@ public class Week {
     }
 
     public double getHours_worked() {
+
+        for(Day d : days){
+             this.hours_worked += d.getHours();
+        }
         return hours_worked;
     }
 
@@ -29,7 +34,7 @@ public class Week {
     }
 
     public double getPay_subtotal() {
-        return pay_subtotal;
+        return hours_worked * pay_per_hour;
     }
 
     public void setPay_subtotal(double pay_subtotal) {
